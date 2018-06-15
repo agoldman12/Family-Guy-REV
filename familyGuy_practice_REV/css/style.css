@@ -1,0 +1,80 @@
+@charset 'UTF-8';
+@import url('reset.css');
+/* CSS DOCUMENT*/
+
+/* TAGS */
+body {
+	background: -webkit-linear-gradient(#a9b861, #98a557, #87934d, #768043);
+	padding: 100px;
+}
+img {
+	display: block;
+	width: 200px;
+	height: 200px;
+	float: left;
+	overflow: hidden;
+	margin: 0 15px 15px 0;
+	border-radius: 10px;
+	border: 3px groove #7061b8;
+	box-shadow: 2px 2px 3px #433a6e;
+}
+li {
+	list-style-type: none;
+	list-style-position: outside;
+	display: block;
+}
+li span {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	height: auto;
+}
+h1{
+	font-size: 48px;
+	padding: 0 0 50px 300px;
+	text-shadow: 2px 2px 3px #ffffff;
+}
+h2 {
+	font-size: 95px;
+	padding: 0 0 10px 0;
+	text-shadow: 2px 2px 3px #ffffff;
+	cursor: pointer;
+	display: inline-block;
+}
+h2:hover{text-shadow: 0px 0px 0px rgb(0,0,0); }
+
+span p {
+	font-size: 26px;
+	text-shadow: 1px 1px 3px #ffffff;
+}
+/* ID's*/
+#bigBox {
+	display: block;
+	border-radius: 10px;
+	background: -webkit-linear-gradient(#7061b8, #7e70bf, #8c80c6, #9a90cd, #a9a0d4);
+	background: -0-linear-gradient(#7061b8, #7e70bf, #8c80c6, #9a90cd, #a9a0d4);
+	background: -moz-linear-gradient(#7061b8, #7e70bf, #8c80c6, #9a90cd, #a9a0d4);
+	background: -linear-gradient(#7061b8, #7e70bf, #8c80c6, #9a90cd, #a9a0d4);
+	height: auto;
+	width: 100%;
+	padding: 30px;
+	box-shadow:  7px 8px 6px #768043;
+}
+
+/* Classes*/
+.clearBoth:after {
+	content: '.';
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+.isHidden {
+	display: none;
+}
+
+.isVisible {
+	display: block;
+}
