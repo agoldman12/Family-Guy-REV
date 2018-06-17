@@ -12,26 +12,15 @@ img {
 	width: 200px;
 	height: 200px;
 	float: left;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	margin: 0 15px 15px 0;
 	border-radius: 10px;
 	border: 3px groove #7061b8;
 	box-shadow: 2px 2px 3px #433a6e;
 }
-li {
-	list-style-type: none;
-	list-style-position: outside;
-	display: block;
-}
-li span {
-	display: block;
-	width: 100%;
-	overflow: hidden;
-	height: auto;
-}
 h1{
-	font-size: 48px;
-	padding: 0 0 50px 300px;
+	font-size: 78px;
+	padding: 0 0 50px 270px;
 	text-shadow: 2px 2px 3px #ffffff;
 }
 h2 {
@@ -43,10 +32,6 @@ h2 {
 }
 h2:hover{text-shadow: 0px 0px 0px rgb(0,0,0); }
 
-span p {
-	font-size: 26px;
-	text-shadow: 1px 1px 3px #ffffff;
-}
 /* ID's*/
 #bigBox {
 	display: block;
@@ -62,6 +47,19 @@ span p {
 }
 
 /* Classes*/
+.charBox {
+	float: left;
+	height: auto;
+}
+
+.charBox p { 
+	font-size: 26px;
+	text-shadow: 1px 1px 3px #ffffff;
+
+}
+.charInfo {
+	height: 230px;
+}
 .clearBoth:after {
 	content: '.';
 	display: block;
