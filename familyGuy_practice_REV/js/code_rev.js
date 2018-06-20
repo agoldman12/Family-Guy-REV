@@ -1,28 +1,64 @@
 'use strict';
+/***********************************************************
+      Code below is where I am now
+      - Three different functions, one for each character
+************************************************************/
+//function to show / hide peter griffin 
+function togglePeter(){
+	let peter = document.getElementById('peter');
 
-
-
-//show picture and description
-function toggleDisplay(){
-	let button = document.getElementsByTagName('h2');
-	let span1 = document.getElementById('span1');
-	let span2 = document.getElementById('span2');
-	let span3 = document.getElementById('span3');
+    if(peter.classList.contains('isHidden')){
+    	peter.classList.remove('isHidden');
+    }else{
+    	peter.classList.add('isHidden');
+    }
     
-    let spans = [span1, span2, span3];
+}
+let pg_btn = document.getElementById('pg_btn');
+pg_btn.addEventListener('click', togglePeter);
 
-	for(let i = 0; i < spans.length; i++) {
-		if(spans[i].classList.contains('isHidden')){
-			spans[i].classList.remove('isHidden');
-			
-		}
-	}
-	button.addEventListener('click', toggleDisplay);
+//function to show / hide Chris griffin 
+function toggleChris(){
+	
+    let chris = document.getElementById('chris');
+    chris.classList.toggle('isHidden');
+    
+}
+let cg_btn = document.getElementById('cg_btn');
+cg_btn.addEventListener('click', toggleChris);
+
+//function to show / hide Brian griffin 
+function toggleBrian(){
+	
+	let brian = document.getElementById('brian');
+        brian.classList.toggle('isHidden');
+}
+let bg_btn = document.getElementById('bg_btn');
+bg_btn.addEventListener('click', toggleBrian);
+
+/************************************************************
+      Code below is where I want to go
+      - single function to show/hide all character info
+*************************************************************/
+
+//This code loops through all charinfo divs and toggles isHidden. However it does it to all three at the same time.
+//Need to figure out how to use nextSibling (or something similar).
+
+/*
+//show and hide image / paragraph for each character
+function toggleDisplay(){
+
+    let charInfo = document.getElementsByClassName('charInfo');
+
+    for(var i = 0; i < charInfo.length; i++){
+       charInfo[i].classList.toggle('isHidden');
+
+    }
 }
 
-
-
-
-
-//example of show and hide
-//https://www.lifewire.com/show-and-hide-text-3467102 (but uses <a> tags and specific id's)
+//reference for <h2 class="charHead"></h2> that I want to use as a button
+let button = document.getElementsByClassName("charHead");
+for (var i = 0; i < button.length; i++) {
+    button[i].addEventListener('click', toggleDisplay, false);
+}
+*/
