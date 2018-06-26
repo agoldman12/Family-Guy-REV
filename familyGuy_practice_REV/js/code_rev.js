@@ -1,28 +1,48 @@
 'use strict';
+//function to show / hide peter griffin 
+function togglePeter(){
+	
+	
+    let peter = document.getElementById('peter');
 
-
-
-//show picture and description
-function toggleDisplay(){
-	let button = document.getElementsByTagName('h2');
-	let span1 = document.getElementById('span1');
-	let span2 = document.getElementById('span2');
-	let span3 = document.getElementById('span3');
+    if(peter.classList.contains('isHidden')){
+    	peter.classList.remove('isHidden');
+    }else{
+    	peter.classList.add('isHidden');
+    }
     
-    let spans = [span1, span2, span3];
-
-	for(let i = 0; i < spans.length; i++) {
-		if(spans[i].classList.contains('isHidden')){
-			spans[i].classList.remove('isHidden');
-			
-		}
-	}
-	button.addEventListener('click', toggleDisplay);
 }
+let pg_btn = document.getElementById('pg_btn');
+pg_btn.addEventListener('click', togglePeter);
 
+//function to show / hide Chris griffin 
+function toggleChris(){
+	
+	
+    let chris = document.getElementById('chris');
 
+    if(chris.classList.contains('isHidden')){
+    	chris.classList.remove('isHidden');
+    }else{
+    	chris.classList.add('isHidden');
+    }
+    
+}
+let cg_btn = document.getElementById('cg_btn');
+cg_btn.addEventListener('click', toggleChris);
 
+//function to show / hide Brian griffin 
+function toggleBrian(){
+	
+	
+    let brian = document.getElementById('brian');
 
-
-//example of show and hide
-//https://www.lifewire.com/show-and-hide-text-3467102 (but uses <a> tags and specific id's)
+    if(brian.classList.contains('isHidden')){
+    	brian.classList.remove('isHidden');
+    }else{
+    	brian.classList.add('isHidden');
+    }
+    
+}
+let bg_btn = document.getElementById('bg_btn');
+bg_btn.addEventListener('click', toggleBrian);
