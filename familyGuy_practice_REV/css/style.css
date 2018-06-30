@@ -57,7 +57,23 @@ h2:hover{text-shadow: 0px 0px 0px rgb(0,0,0); }
 
 }
 .charInfo {
-	height: 230px;
+	  float: left;
+	  -webkit-opacity: 1;
+	  -moz-opacity: 1;
+	  opacity: 1;
+	  -webkit-transition: all 1s ease-in-out;
+	  -moz-transition: all 1s ease-in-out;
+	  -ms-transition: all 1s ease-in-out;
+	  -o-transition: all 1s ease-in-out;
+	  transition: all 1s ease-in-out;
+	
+
+	  height: 230px;
+	 -webkit-transition: all 1s ease-in-out;
+	  -moz-transition: all 1s ease-in-out;
+	  -ms-transition: all 1s ease-in-out;
+	  -o-transition: all 1s ease-in-out;
+	  transition: all 1s ease-in-out; 
 }
 .clearBoth:after {
 	content: '.';
@@ -69,7 +85,23 @@ h2:hover{text-shadow: 0px 0px 0px rgb(0,0,0); }
 	visibility: hidden;
 }
 .isHidden {
-	display: none;
+	  -webkit-opacity: 0;
+	  -moz-opacity: 0;
+	  opacity: 0;
+	  -webkit-transition: all 1s ease-in-out;
+	  -moz-transition: all 1s ease-in-out;
+	  -ms-transition: all 1s ease-in-out;
+	  -o-transition: all 1s ease-in-out;
+	  transition: all 1s ease-in-out;
+
+	  height: 0;
+	  -webkit-transition: all 1s ease-in-out;
+	  -moz-transition: all 1s ease-in-out;
+	  -ms-transition: all 1s ease-in-out;
+	  -o-transition: all 1s ease-in-out;
+	  transition: all 1s ease-in-out;
+	 
+	 
 }
 
 .isVisible {
