@@ -6,7 +6,7 @@ const brianEl = document.getElementById("brian");
 
 const charArray = [peterEl, chrisEl, brianEl];
 //reference for <h2> that I want to use as a button
-const button = document.getElementsByClassName("charHead");
+const button = Array.from(document.querySelectorAll(".charHead"));
 for (var i = 0; i < button.length; i++) {
       button[i].addEventListener('click', toggleDisplay);
    }
